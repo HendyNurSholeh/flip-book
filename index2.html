@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Icons8-Windows-8-Printing-Books.ico" />
+    <title>Flip Book Mobile</title>
+    <style>
+        @media only screen and (max-width: 768px) {
+            .book {
+                width: 100vw;
+                height: 70vh;
+            }
+
+            .paper {
+                perspective: unset;
+                position: absolute;
+            }
+
+            .back {
+                display: none;
+            }
+
+            button {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="prev-btn" style="z-index: 9999;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+        </svg>
+    </button>
+    <div id="book" class="book">
+        <div id="p1" class="paper">
+            <div class="front">
+                <div class="front-content">
+                    <img src="./Laporan Tekno Kel-1_page-0001.jpg" height="100%" alt="" />
+                </div>
+            </div>
+            <div class="back">
+                <div class="back-content">
+                    <img src="./Laporan Tekno Kel-1_page-0003.jpg" height="100%" alt="" />
+                </div>
+            </div>
+        </div>
+        <div id="p2" class="paper">
+            <div class="front">
+                <div class="front-content">
+                    <img src="./Laporan Tekno Kel-1_page-0005.jpg" height="100%" alt="" />
+                </div>
+            </div>
+            <div class="back">
+                <div class="back-content">
+                    <img src="./Laporan Tekno Kel-1_page-0010.jpg" height="100%" alt="" />
+                </div>
+            </div>
+        </div>
+        <div id="p3" class="paper">
+            <div class="front">
+                <div class="front-content">
+                    <img src="./Laporan Tekno Kel-1_page-0015.jpg" height="100%" alt="" />
+                </div>
+            </div>
+            <div class="back">
+                <div class="back-content">
+                    <img src="./Laporan Tekno Kel-1_page-0001.jpg" height="100%" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="next-btn" style="z-index: 9999;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+        </svg>
+    </button>
+    <script src="script2.js"></script>
+</body>
+</html>
